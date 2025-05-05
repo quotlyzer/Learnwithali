@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete English Words with Roman Urdu Meanings</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding-bottom: 50px;
+        }
+        .word-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+        .word-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .category-section {
+            margin-bottom: 2rem;
+            break-inside: avoid;
+        }
+        .category-title {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .category-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1rem;
+            height: 1rem;
+            background-color: #4b5563;
+            border-radius: 50%;
+        }
+        .logo {
+            animation: colorChange 5s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% { color: #3b82f6; }
+            50% { color: #8b5cf6; }
+            100% { color: #ec4899; }
+        }
+        .search-box {
+            position: sticky;
+            top: 1rem;
+            z-index: 10;
+        }
+         {
+            .search-box {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="max-w-6xl mx-auto px-4">
+    <header class="py-6 mb-8 border-b border-gray-300 flex flex-col items-center">
+        <h1 class="text-4xl font-bold mb-2 logo text-center">English Words with Roman Urdu Meanings</h1>
+        <p class="text-lg text-gray-600 mb-6 text-center">A comprehensive guide to help you learn English easily</p>
+        
+        <div class="search-box w-full max-w-md mb-4">
+            <input type="text" id="searchInput" placeholder="Search for words..." class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        
+        <div class="flex flex-wrap gap-2 justify-center" id="categoryJump">
+            <!-- Category links will be added by JavaScript -->
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Basic Words and Greetings -->
+        <section id="basic-greetings" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Basic Words and Greetings</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Hello</span> <span class="text-gray-600">Assalam-o-Alaikum / Hello</span></div>
+                    <div class="word-item"><span class="font-medium">Goodbye</span> <span class="text-gray-600">Khuda Hafiz / Allah Hafiz</span></div>
+                    <div class="word-item"><span class="font-medium">Thank you</span> <span class="text-gray-600">Shukriya</span></div>
+                    <div class="word-item"><span class="font-medium">Please</span> <span class="text-gray-600">Mehrbani</span></div>
+                    <div class="word-item"><span class="font-medium">Sorry</span> <span class="text-gray-600">Maaf kijiye</span></div>
+                    <div class="word-item"><span class="font-medium">Yes</span> <span class="text-gray-600">Haan / Ji</span></div>
+                    <div class="word-item"><span class="font-medium">No</span> <span class="text-gray-600">Nahi</span></div>
+                    <div class="word-item"><span class="font-medium">Excuse me</span> <span class="text-gray-600">Muaaf kijiye</span></div>
+                    <div class="word-item"><span class="font-medium">How are you?</span> <span class="text-gray-600">Aap kaise hain?</span></div>
+                    <div class="word-item"><span class="font-medium">I'm fine</span> <span class="text-gray-600">Main theek hoon</span></div>
+                    <div class="word-item"><span class="font-medium">Good morning</span> <span class="text-gray-600">Subah bakhair</span></div>
+                    <div class="word-item"><span class="font-medium">Good evening</span> <span class="text-gray-600">Shaam bakhair</span></div>
+                    <div class="word-item"><span class="font-medium">Good night</span> <span class="text-gray-600">Shab bakhair</span></div>
+                    <div class="word-item"><span class="font-medium">Nice to meet you</span> <span class="text-gray-600">Aap se mil kar khushi hui</span></div>
+                    <div class="word-item"><span class="font-medium">Welcome</span> <span class="text-gray-600">Khush amdeed</span></div>
+                    <div class="word-item"><span class="font-medium">How much?</span> <span class="text-gray-600">Kitna?</span></div>
+                    <div class="word-item"><span class="font-medium">I understand</span> <span class="text-gray-600">Mujhe samajh aa gaya</span></div>
+                    <div class="word-item"><span class="font-medium">I don't understand</span> <span class="text-gray-600">Mujhe samajh nahi aaya</span></div>
+                    <div class="word-item"><span class="font-medium">Help</span> <span class="text-gray-600">Madad</span></div>
+                    <div class="word-item"><span class="font-medium">Stop</span> <span class="text-gray-600">Ruko</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Numbers and Counting -->
+        <section id="numbers" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Numbers and Counting</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">One</span> <span class="text-gray-600">Aik</span></div>
+                    <div class="word-item"><span class="font-medium">Two</span> <span class="text-gray-600">Do</span></div>
+                    <div class="word-item"><span class="font-medium">Three</span> <span class="text-gray-600">Teen</span></div>
+                    <div class="word-item"><span class="font-medium">Four</span> <span class="text-gray-600">Chaar</span></div>
+                    <div class="word-item"><span class="font-medium">Five</span> <span class="text-gray-600">Paanch</span></div>
+                    <div class="word-item"><span class="font-medium">Six</span> <span class="text-gray-600">Cheh</span></div>
+                    <div class="word-item"><span class="font-medium">Seven</span> <span class="text-gray-600">Saat</span></div>
+                    <div class="word-item"><span class="font-medium">Eight</span> <span class="text-gray-600">Aath</span></div>
+                    <div class="word-item"><span class="font-medium">Nine</span> <span class="text-gray-600">Nau</span></div>
+                    <div class="word-item"><span class="font-medium">Ten</span> <span class="text-gray-600">Das</span></div>
+                    <div class="word-item"><span class="font-medium">Eleven</span> <span class="text-gray-600">Gyarah</span></div>
+                    <div class="word-item"><span class="font-medium">Twelve</span> <span class="text-gray-600">Barah</span></div>
+                    <div class="word-item"><span class="font-medium">Twenty</span> <span class="text-gray-600">Bees</span></div>
+                    <div class="word-item"><span class="font-medium">Thirty</span> <span class="text-gray-600">Tees</span></div>
+                    <div class="word-item"><span class="font-medium">Forty</span> <span class="text-gray-600">Chalis</span></div>
+                    <div class="word-item"><span class="font-medium">Fifty</span> <span class="text-gray-600">Pachas</span></div>
+                    <div class="word-item"><span class="font-medium">Hundred</span> <span class="text-gray-600">Sau</span></div>
+                    <div class="word-item"><span class="font-medium">Thousand</span> <span class="text-gray-600">Hazaar</span></div>
+                    <div class="word-item"><span class="font-medium">Million</span> <span class="text-gray-600">Das lakh</span></div>
+                    <div class="word-item"><span class="font-medium">First</span> <span class="text-gray-600">Pehla</span></div>
+                    <div class="word-item"><span class="font-medium">Second</span> <span class="text-gray-600">Dusra</span></div>
+                    <div class="word-item"><span class="font-medium">Third</span> <span class="text-gray-600">Teesra</span></div>
+                    <div class="word-item"><span class="font-medium">Last</span> <span class="text-gray-600">Aakhri</span></div>
+                    <div class="word-item"><span class="font-medium">Half</span> <span class="text-gray-600">Adha</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Time and Calendar -->
+        <section id="time-calendar" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Time and Calendar</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Time</span> <span class="text-gray-600">Waqt</span></div>
+                    <div class="word-item"><span class="font-medium">Day</span> <span class="text-gray-600">Din</span></div>
+                    <div class="word-item"><span class="font-medium">Week</span> <span class="text-gray-600">Hafta</span></div>
+                    <div class="word-item"><span class="font-medium">Month</span> <span class="text-gray-600">Maheena</span></div>
+                    <div class="word-item"><span class="font-medium">Year</span> <span class="text-gray-600">Saal</span></div>
+                    <div class="word-item"><span class="font-medium">Today</span> <span class="text-gray-600">Aaj</span></div>
+                    <div class="word-item"><span class="font-medium">Tomorrow</span> <span class="text-gray-600">Kal</span></div>
+                    <div class="word-item"><span class="font-medium">Yesterday</span> <span class="text-gray-600">Kal (guzashta)</span></div>
+                    <div class="word-item"><span class="font-medium">Now</span> <span class="text-gray-600">Ab</span></div>
+                    <div class="word-item"><span class="font-medium">Later</span> <span class="text-gray-600">Baad mein</span></div>
+                    <div class="word-item"><span class="font-medium">Monday</span> <span class="text-gray-600">Pir</span></div>
+                    <div class="word-item"><span class="font-medium">Tuesday</span> <span class="text-gray-600">Mangal</span></div>
+                    <div class="word-item"><span class="font-medium">Wednesday</span> <span class="text-gray-600">Budh</span></div>
+                    <div class="word-item"><span class="font-medium">Thursday</span> <span class="text-gray-600">Jumerat</span></div>
+                    <div class="word-item"><span class="font-medium">Friday</span> <span class="text-gray-600">Juma</span></div>
+                    <div class="word-item"><span class="font-medium">Saturday</span> <span class="text-gray-600">Hafta</span></div>
+                    <div class="word-item"><span class="font-medium">Sunday</span> <span class="text-gray-600">Itwar</span></div>
+                    <div class="word-item"><span class="font-medium">January</span> <span class="text-gray-600">Janwari</span></div>
+                    <div class="word-item"><span class="font-medium">February</span> <span class="text-gray-600">Farwari</span></div>
+                    <div class="word-item"><span class="font-medium">March</span> <span class="text-gray-600">March</span></div>
+                    <div class="word-item"><span class="font-medium">April</span> <span class="text-gray-600">April</span></div>
+                    <div class="word-item"><span class="font-medium">May</span> <span class="text-gray-600">May</span></div>
+                    <div class="word-item"><span class="font-medium">June</span> <span class="text-gray-600">June</span></div>
+                    <div class="word-item"><span class="font-medium">Morning</span> <span class="text-gray-600">Subah</span></div>
+                    <div class="word-item"><span class="font-medium">Afternoon</span> <span class="text-gray-600">Dopehar</span></div>
+                    <div class="word-item"><span class="font-medium">Evening</span> <span class="text-gray-600">Shaam</span></div>
+                    <div class="word-item"><span class="font-medium">Night</span> <span class="text-gray-600">Raat</span></div>
+                    <div class="word-item"><span class="font-medium">Minute</span> <span class="text-gray-600">Minute</span></div>
+                    <div class="word-item"><span class="font-medium">Hour</span> <span class="text-gray-600">Ghanta</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Family and Relationships -->
+        <section id="family" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Family and Relationships</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Family</span> <span class="text-gray-600">Khaandaan</span></div>
+                    <div class="word-item"><span class="font-medium">Father</span> <span class="text-gray-600">Abbu / Walid</span></div>
+                    <div class="word-item"><span class="font-medium">Mother</span> <span class="text-gray-600">Ammi / Walida</span></div>
+                    <div class="word-item"><span class="font-medium">Brother</span> <span class="text-gray-600">Bhai</span></div>
+                    <div class="word-item"><span class="font-medium">Sister</span> <span class="text-gray-600">Behan</span></div>
+                    <div class="word-item"><span class="font-medium">Son</span> <span class="text-gray-600">Beta</span></div>
+                    <div class="word-item"><span class="font-medium">Daughter</span> <span class="text-gray-600">Beti</span></div>
+                    <div class="word-item"><span class="font-medium">Husband</span> <span class="text-gray-600">Shohar / Khawind</span></div>
+                    <div class="word-item"><span class="font-medium">Wife</span> <span class="text-gray-600">Biwi</span></div>
+                    <div class="word-item"><span class="font-medium">Grandfather</span> <span class="text-gray-600">Dada / Nana</span></div>
+                    <div class="word-item"><span class="font-medium">Grandmother</span> <span class="text-gray-600">Dadi / Nani</span></div>
+                    <div class="word-item"><span class="font-medium">Uncle</span> <span class="text-gray-600">Chacha / Mamoo</span></div>
+                    <div class="word-item"><span class="font-medium">Aunt</span> <span class="text-gray-600">Khala / Phupho</span></div>
+                    <div class="word-item"><span class="font-medium">Cousin</span> <span class="text-gray-600">Cousin</span></div>
+                    <div class="word-item"><span class="font-medium">Nephew</span> <span class="text-gray-600">Bhateeja / Bhaanja</span></div>
+                    <div class="word-item"><span class="font-medium">Niece</span> <span class="text-gray-600">Bhateeja / Bhanji</span></div>
+                    <div class="word-item"><span class="font-medium">Friend</span> <span class="text-gray-600">Dost</span></div>
+                    <div class="word-item"><span class="font-medium">Best friend</span> <span class="text-gray-600">Qareebe dost</span></div>
+                    <div class="word-item"><span class="font-medium">Parent</span> <span class="text-gray-600">Walidain</span></div>
+                    <div class="word-item"><span class="font-medium">Child</span> <span class="text-gray-600">Bacha</span></div>
+                    <div class="word-item"><span class="font-medium">Children</span> <span class="text-gray-600">Bachay</span></div>
+                    <div class="word-item"><span class="font-medium">Neighbor</span> <span class="text-gray-600">Hamsaya / Padosi</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Body Parts -->
+        <section id="body-parts" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Body Parts</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Head</span> <span class="text-gray-600">Sar</span></div>
+                    <div class="word-item"><span class="font-medium">Face</span> <span class="text-gray-600">Chehra</span></div>
+                    <div class="word-item"><span class="font-medium">Hair</span> <span class="text-gray-600">Baal</span></div>
+                    <div class="word-item"><span class="font-medium">Eye</span> <span class="text-gray-600">Aankh</span></div>
+                    <div class="word-item"><span class="font-medium">Ear</span> <span class="text-gray-600">Kaan</span></div>
+                    <div class="word-item"><span class="font-medium">Nose</span> <span class="text-gray-600">Naak</span></div>
+                    <div class="word-item"><span class="font-medium">Mouth</span> <span class="text-gray-600">Munh</span></div>
+                    <div class="word-item"><span class="font-medium">Lip</span> <span class="text-gray-600">Honth</span></div>
+                    <div class="word-item"><span class="font-medium">Teeth</span> <span class="text-gray-600">Daant</span></div>
+                    <div class="word-item"><span class="font-medium">Tongue</span> <span class="text-gray-600">Zuban</span></div>
+                    <div class="word-item"><span class="font-medium">Neck</span> <span class="text-gray-600">Gardan</span></div>
+                    <div class="word-item"><span class="font-medium">Shoulder</span> <span class="text-gray-600">Kandha</span></div>
+                    <div class="word-item"><span class="font-medium">Arm</span> <span class="text-gray-600">Baazu</span></div>
+                    <div class="word-item"><span class="font-medium">Elbow</span> <span class="text-gray-600">Kohni</span></div>
+                    <div class="word-item"><span class="font-medium">Hand</span> <span class="text-gray-600">Haath</span></div>
+                    <div class="word-item"><span class="font-medium">Finger</span> <span class="text-gray-600">Ungli</span></div>
+                    <div class="word-item"><span class="font-medium">Thumb</span> <span class="text-gray-600">Angootha</span></div>
+                    <div class="word-item"><span class="font-medium">Chest</span> <span class="text-gray-600">Seena / Chhati</span></div>
+                    <div class="word-item"><span class="font-medium">Stomach</span> <span class="text-gray-600">Pet</span></div>
+                    <div class="word-item"><span class="font-medium">Back</span> <span class="text-gray-600">Peeth</span></div>
+                    <div class="word-item"><span class="font-medium">Leg</span> <span class="text-gray-600">Taang</span></div>
+                    <div class="word-item"><span class="font-medium">Knee</span> <span class="text-gray-600">Ghutna</span></div>
+                    <div class="word-item"><span class="font-medium">Foot</span> <span class="text-gray-600">Paon</span></div>
+                    <div class="word-item"><span class="font-medium">Toe</span> <span class="text-gray-600">Paer ki ungli</span></div>
+                    <div class="word-item"><span class="font-medium">Heart</span> <span class="text-gray-600">Dil</span></div>
+                    <div class="word-item"><span class="font-medium">Brain</span> <span class="text-gray-600">Dimagh</span></div>
+                    <div class="word-item"><span class="font-medium">Blood</span> <span class="text-gray-600">Khoon</span></div>
+                    <div class="word-item"><span class="font-medium">Bone</span> <span class="text-gray-600">Haddi</span></div>
+                    <div class="word-item"><span class="font-medium">Skin</span> <span class="text-gray-600">Jild</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Food and Drinks -->
+        <section id="food-drinks" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Food and Drinks</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Food</span> <span class="text-gray-600">Khana</span></div>
+                    <div class="word-item"><span class="font-medium">Drink</span> <span class="text-gray-600">Peena / Mashroob</span></div>
+                    <div class="word-item"><span class="font-medium">Water</span> <span class="text-gray-600">Pani</span></div>
+                    <div class="word-item"><span class="font-medium">Milk</span> <span class="text-gray-600">Doodh</span></div>
+                    <div class="word-item"><span class="font-medium">Tea</span> <span class="text-gray-600">Chai</span></div>
+                    <div class="word-item"><span class="font-medium">Coffee</span> <span class="text-gray-600">Coffee</span></div>
+                    <div class="word-item"><span class="font-medium">Juice</span> <span class="text-gray-600">Juice / Ras</span></div>
+                    <div class="word-item"><span class="font-medium">Bread</span> <span class="text-gray-600">Roti / Double roti</span></div>
+                    <div class="word-item"><span class="font-medium">Rice</span> <span class="text-gray-600">Chawal</span></div>
+                    <div class="word-item"><span class="font-medium">Meat</span> <span class="text-gray-600">Gosht</span></div>
+                    <div class="word-item"><span class="font-medium">Chicken</span> <span class="text-gray-600">Murgh / Chicken</span></div>
+                    <div class="word-item"><span class="font-medium">Fish</span> <span class="text-gray-600">Machli</span></div>
+                    <div class="word-item"><span class="font-medium">Vegetable</span> <span class="text-gray-600">Sabzi</span></div>
+                    <div class="word-item"><span class="font-medium">Fruit</span> <span class="text-gray-600">Phal</span></div>
+                    <div class="word-item"><span class="font-medium">Apple</span> <span class="text-gray-600">Saib</span></div>
+                    <div class="word-item"><span class="font-medium">Banana</span> <span class="text-gray-600">Kela</span></div>
+                    <div class="word-item"><span class="font-medium">Orange</span> <span class="text-gray-600">Malta</span></div>
+                    <div class="word-item"><span class="font-medium">Mango</span> <span class="text-gray-600">Aam</span></div>
+                    <div class="word-item"><span class="font-medium">Tomato</span> <span class="text-gray-600">Tamatar</span></div>
+                    <div class="word-item"><span class="font-medium">Potato</span> <span class="text-gray-600">Aloo</span></div>
+                    <div class="word-item"><span class="font-medium">Onion</span> <span class="text-gray-600">Pyaz</span></div>
+                    <div class="word-item"><span class="font-medium">Sugar</span> <span class="text-gray-600">Cheeni</span></div>
+                    <div class="word-item"><span class="font-medium">Salt</span> <span class="text-gray-600">Namak</span></div>
+                    <div class="word-item"><span class="font-medium">Spice</span> <span class="text-gray-600">Masala</span></div>
+                    <div class="word-item"><span class="font-medium">Breakfast</span> <span class="text-gray-600">Nashta</span></div>
+                    <div class="word-item"><span class="font-medium">Lunch</span> <span class="text-gray-600">Dopehar ka khana</span></div>
+                    <div class="word-item"><span class="font-medium">Dinner</span> <span class="text-gray-600">Raat ka khana</span></div>
+                    <div class="word-item"><span class="font-medium">Dessert</span> <span class="text-gray-600">Meetha</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Clothing and Appearance -->
+        <section id="clothing" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Clothing and Appearance</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Clothes</span> <span class="text-gray-600">Kapray</span></div>
+                    <div class="word-item"><span class="font-medium">Shirt</span> <span class="text-gray-600">Qameez / Shirt</span></div>
+                    <div class="word-item"><span class="font-medium">T-shirt</span> <span class="text-gray-600">T-shirt</span></div>
+                    <div class="word-item"><span class="font-medium">Pants</span> <span class="text-gray-600">Patloon</span></div>
+                    <div class="word-item"><span class="font-medium">Jeans</span> <span class="text-gray-600">Jeans</span></div>
+                    <div class="word-item"><span class="font-medium">Skirt</span> <span class="text-gray-600">Skirt</span></div>
+                    <div class="word-item"><span class="font-medium">Dress</span> <span class="text-gray-600">Dress</span></div>
+                    <div class="word-item"><span class="font-medium">Suit</span> <span class="text-gray-600">Suit</span></div>
+                    <div class="word-item"><span class="font-medium">Jacket</span> <span class="text-gray-600">Jacket</span></div>
+                    <div class="word-item"><span class="font-medium">Coat</span> <span class="text-gray-600">Coat</span></div>
+                    <div class="word-item"><span class="font-medium">Sweater</span> <span class="text-gray-600">Sweater</span></div>
+                    <div class="word-item"><span class="font-medium">Socks</span> <span class="text-gray-600">Jurabein</span></div>
+                    <div class="word-item"><span class="font-medium">Shoes</span> <span class="text-gray-600">Jootay</span></div>
+                    <div class="word-item"><span class="font-medium">Sandals</span> <span class="text-gray-600">Chappal</span></div>
+                    <div class="word-item"><span class="font-medium">Hat</span> <span class="text-gray-600">Topi</span></div>
+                    <div class="word-item"><span class="font-medium">Cap</span> <span class="text-gray-600">Cap</span></div>
+                    <div class="word-item"><span class="font-medium">Scarf</span> <span class="text-gray-600">Duppata</span></div>
+                    <div class="word-item"><span class="font-medium">Tie</span> <span class="text-gray-600">Tie</span></div>
+                    <div class="word-item"><span class="font-medium">Belt</span> <span class="text-gray-600">Belt</span></div>
+                    <div class="word-item"><span class="font-medium">Glasses</span> <span class="text-gray-600">Chashma</span></div>
+                    <div class="word-item"><span class="font-medium">Watch</span> <span class="text-gray-600">Ghari</span></div>
+                    <div class="word-item"><span class="font-medium">Ring</span> <span class="text-gray-600">Angoothi</span></div>
+                    <div class="word-item"><span class="font-medium">Necklace</span> <span class="text-gray-600">Haar</span></div>
+                    <div class="word-item"><span class="font-medium">Earrings</span> <span class="text-gray-600">Baaliyan</span></div>
+                    <div class="word-item"><span class="font-medium">Bracelet</span> <span class="text-gray-600">Kangan</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Home and Furniture -->
+        <section id="home-furniture" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Home and Furniture</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">House</span> <span class="text-gray-600">Ghar / Makan</span></div>
+                    <div class="word-item"><span class="font-medium">Room</span> <span class="text-gray-600">Kamra</span></div>
+                    <div class="word-item"><span class="font-medium">Kitchen</span> <span class="text-gray-600">Bawarchi khana</span></div>
+                    <div class="word-item"><span class="font-medium">Bathroom</span> <span class="text-gray-600">Ghusal khana</span></div>
+                    <div class="word-item"><span class="font-medium">Bedroom</span> <span class="text-gray-600">Sone ka kamra</span></div>
+                    <div class="word-item"><span class="font-medium">Living room</span> <span class="text-gray-600">Baithak</span></div>
+                    <div class="word-item"><span class="font-medium">Dining room</span> <span class="text-gray-600">Khane ka kamra</span></div>
+                    <div class="word-item"><span class="font-medium">Garden</span> <span class="text-gray-600">Baagh / Bagheecha</span></div>
+                    <div class="word-item"><span class="font-medium">Wall</span> <span class="text-gray-600">Deewar</span></div>
+                    <div class="word-item"><span class="font-medium">Floor</span> <span class="text-gray-600">Farsh</span></div>
+                    <div class="word-item"><span class="font-medium">Ceiling</span> <span class="text-gray-600">Chhat</span></div>
+                    <div class="word-item"><span class="font-medium">Door</span> <span class="text-gray-600">Darwaza</span></div>
+                    <div class="word-item"><span class="font-medium">Window</span> <span class="text-gray-600">Khirki</span></div>
+                    <div class="word-item"><span class="font-medium">Stairs</span> <span class="text-gray-600">Seerhiyan</span></div>
+                    <div class="word-item"><span class="font-medium">Roof</span> <span class="text-gray-600">Chhat</span></div>
+                    <div class="word-item"><span class="font-medium">Furniture</span> <span class="text-gray-600">Furniture</span></div>
+                    <div class="word-item"><span class="font-medium">Table</span> <span class="text-gray-600">Mez</span></div>
+                    <div class="word-item"><span class="font-medium">Chair</span> <span class="text-gray-600">Kursi</span></div>
+                    <div class="word-item"><span class="font-medium">Sofa</span> <span class="text-gray-600">Sofa</span></div>
+                    <div class="word-item"><span class="font-medium">Bed</span> <span class="text-gray-600">Bistar / Palang</span></div>
+                    <div class="word-item"><span class="font-medium">Cupboard</span> <span class="text-gray-600">Almari</span></div>
+                    <div class="word-item"><span class="font-medium">Shelf</span> <span class="text-gray-600">Shelf</span></div>
+                    <div class="word-item"><span class="font-medium">Mirror</span> <span class="text-gray-600">Aina</span></div>
+                    <div class="word-item"><span class="font-medium">Picture</span> <span class="text-gray-600">Tasveer</span></div>
+                    <div class="word-item"><span class="font-medium">Clock</span> <span class="text-gray-600">Ghari</span></div>
+                    <div class="word-item"><span class="font-medium">Lamp</span> <span class="text-gray-600">Lamp</span></div>
+                    <div class="word-item"><span class="font-medium">Light</span> <span class="text-gray-600">Roshni / Batti</span></div>
+                    <div class="word-item"><span class="font-medium">Fan</span> <span class="text-gray-600">Pankha</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Travel and Transportation -->
+        <section id="travel-transport" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Travel and Transportation</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Travel</span> <span class="text-gray-600">Safar</span></div>
+                    <div class="word-item"><span class="font-medium">Trip</span> <span class="text-gray-600">Sair</span></div>
+                    <div class="word-item"><span class="font-medium">Journey</span> <span class="text-gray-600">Safar</span></div>
+                    <div class="word-item"><span class="font-medium">Transport</span> <span class="text-gray-600">Naql-o-haml</span></div>
+                    <div class="word-item"><span class="font-medium">Vehicle</span> <span class="text-gray-600">Gaari</span></div>
+                    <div class="word-item"><span class="font-medium">Car</span> <span class="text-gray-600">Car / Gaari</span></div>
+                    <div class="word-item"><span class="font-medium">Bus</span> <span class="text-gray-600">Bus</span></div>
+                    <div class="word-item"><span class="font-medium">Train</span> <span class="text-gray-600">Rail Gaari / Train</span></div>
+                    <div class="word-item"><span class="font-medium">Airplane</span> <span class="text-gray-600">Jahaz</span></div>
+                    <div class="word-item"><span class="font-medium">Taxi</span> <span class="text-gray-600">Taxi</span></div>
+                    <div class="word-item"><span class="font-medium">Bicycle</span> <span class="text-gray-600">Cycle</span></div>
+                    <div class="word-item"><span class="font-medium">Motorcycle</span> <span class="text-gray-600">Motorcycle</span></div>
+                    <div class="word-item"><span class="font-medium">Boat</span> <span class="text-gray-600">Kashti / Naav</span></div>
+                    <div class="word-item"><span class="font-medium">Ship</span> <span class="text-gray-600">Jahaz</span></div>
+                    <div class="word-item"><span class="font-medium">Road</span> <span class="text-gray-600">Sarak</span></div>
+                    <div class="word-item"><span class="font-medium">Street</span> <span class="text-gray-600">Gali</span></div>
+                    <div class="word-item"><span class="font-medium">Highway</span> <span class="text-gray-600">Shahra</span></div>
+                    <div class="word-item"><span class="font-medium">Bridge</span> <span class="text-gray-600">Pul</span></div>
+                    <div class="word-item"><span class="font-medium">Airport</span> <span class="text-gray-600">Hawai adda</span></div>
+                    <div class="word-item"><span class="font-medium">Railway station</span> <span class="text-gray-600">Railway station</span></div>
+                    <div class="word-item"><span class="font-medium">Bus stop</span> <span class="text-gray-600">Bus adda</span></div>
+                    <div class="word-item"><span class="font-medium">Ticket</span> <span class="text-gray-600">Ticket</span></div>
+                    <div class="word-item"><span class="font-medium">Passport</span> <span class="text-gray-600">Passport</span></div>
+                    <div class="word-item"><span class="font-medium">Visa</span> <span class="text-gray-600">Visa</span></div>
+                    <div class="word-item"><span class="font-medium">Luggage</span> <span class="text-gray-600">Samaan</span></div>
+                    <div class="word-item"><span class="font-medium">Map</span> <span class="text-gray-600">Naqsha</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Places and Directions -->
+        <section id="places-directions" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Places and Directions</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Place</span> <span class="text-gray-600">Jagah</span></div>
+                    <div class="word-item"><span class="font-medium">City</span> <span class="text-gray-600">Shehar</span></div>
+                    <div class="word-item"><span class="font-medium">Town</span> <span class="text-gray-600">Qasba</span></div>
+                    <div class="word-item"><span class="font-medium">Village</span> <span class="text-gray-600">Gaon</span></div>
+                    <div class="word-item"><span class="font-medium">Country</span> <span class="text-gray-600">Mulk</span></div>
+                    <div class="word-item"><span class="font-medium">World</span> <span class="text-gray-600">Dunya</span></div>
+                    <div class="word-item"><span class="font-medium">Address</span> <span class="text-gray-600">Pata</span></div>
+                    <div class="word-item"><span class="font-medium">Direction</span> <span class="text-gray-600">Simt</span></div>
+                    <div class="word-item"><span class="font-medium">North</span> <span class="text-gray-600">Shumal</span></div>
+                    <div class="word-item"><span class="font-medium">South</span> <span class="text-gray-600">Junoob</span></div>
+                    <div class="word-item"><span class="font-medium">East</span> <span class="text-gray-600">Mashriq</span></div>
+                    <div class="word-item"><span class="font-medium">West</span> <span class="text-gray-600">Maghrib</span></div>
+                    <div class="word-item"><span class="font-medium">Left</span> <span class="text-gray-600">Bayen</span></div>
+                    <div class="word-item"><span class="font-medium">Right</span> <span class="text-gray-600">Dayen</span></div>
+                    <div class="word-item"><span class="font-medium">Up</span> <span class="text-gray-600">Upar</span></div>
+                    <div class="word-item"><span class="font-medium">Down</span> <span class="text-gray-600">Neeche</span></div>
+                    <div class="word-item"><span class="font-medium">Front</span> <span class="text-gray-600">Saamne</span></div>
+                    <div class="word-item"><span class="font-medium">Back</span> <span class="text-gray-600">Peeche</span></div>
+                    <div class="word-item"><span class="font-medium">Inside</span> <span class="text-gray-600">Andar</span></div>
+                    <div class="word-item"><span class="font-medium">Outside</span> <span class="text-gray-600">Bahar</span></div>
+                    <div class="word-item"><span class="font-medium">Near</span> <span class="text-gray-600">Qareeb</span></div>
+                    <div class="word-item"><span class="font-medium">Far</span> <span class="text-gray-600">Door</span></div>
+                    <div class="word-item"><span class="font-medium">Center</span> <span class="text-gray-600">Markaz</span></div>
+                    <div class="word-item"><span class="font-medium">Market</span> <span class="text-gray-600">Bazaar</span></div>
+                    <div class="word-item"><span class="font-medium">Shop</span> <span class="text-gray-600">Dukaan</span></div>
+                    <div class="word-item"><span class="font-medium">Restaurant</span> <span class="text-gray-600">Restaurant</span></div>
+                    <div class="word-item"><span class="font-medium">Hotel</span> <span class="text-gray-600">Hotel</span></div>
+                    <div class="word-item"><span class="font-medium">Hospital</span> <span class="text-gray-600">Haspatal</span></div>
+                    <div class="word-item"><span class="font-medium">School</span> <span class="text-gray-600">School</span></div>
+                    <div class="word-item"><span class="font-medium">Bank</span> <span class="text-gray-600">Bank</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. Weather and Nature -->
+        <section id="weather-nature" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Weather and Nature</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Weather</span> <span class="text-gray-600">Mausam</span></div>
+                    <div class="word-item"><span class="font-medium">Nature</span> <span class="text-gray-600">Qudrat</span></div>
+                    <div class="word-item"><span class="font-medium">Sun</span> <span class="text-gray-600">Suraj</span></div>
+                    <div class="word-item"><span class="font-medium">Moon</span> <span class="text-gray-600">Chaand</span></div>
+                    <div class="word-item"><span class="font-medium">Star</span> <span class="text-gray-600">Sitara</span></div>
+                    <div class="word-item"><span class="font-medium">Sky</span> <span class="text-gray-600">Asmaan</span></div>
+                    <div class="word-item"><span class="font-medium">Cloud</span> <span class="text-gray-600">Badal</span></div>
+                    <div class="word-item"><span class="font-medium">Rain</span> <span class="text-gray-600">Baarish</span></div>
+                    <div class="word-item"><span class="font-medium">Snow</span> <span class="text-gray-600">Barf</span></div>
+                    <div class="word-item"><span class="font-medium">Wind</span> <span class="text-gray-600">Hawa</span></div>
+                    <div class="word-item"><span class="font-medium">Storm</span> <span class="text-gray-600">Toofan</span></div>
+                    <div class="word-item"><span class="font-medium">Lightning</span> <span class="text-gray-600">Bijli</span></div>
+                    <div class="word-item"><span class="font-medium">Thunder</span> <span class="text-gray-600">Garaj</span></div>
+                    <div class="word-item"><span class="font-medium">Rainbow</span> <span class="text-gray-600">Qaus-e-qazah</span></div>
+                    <div class="word-item"><span class="font-medium">Hot</span> <span class="text-gray-600">Garam</span></div>
+                    <div class="word-item"><span class="font-medium">Cold</span> <span class="text-gray-600">Thanda</span></div>
+                    <div class="word-item"><span class="font-medium">Warm</span> <span class="text-gray-600">Gunguna</span></div>
+                    <div class="word-item"><span class="font-medium">Cool</span> <span class="text-gray-600">Thandak</span></div>
+                    <div class="word-item"><span class="font-medium">Wet</span> <span class="text-gray-600">Geela</span></div>
+                    <div class="word-item"><span class="font-medium">Dry</span> <span class="text-gray-600">Khushk</span></div>
+                    <div class="word-item"><span class="font-medium">Sunny</span> <span class="text-gray-600">Dhoop wala</span></div>
+                    <div class="word-item"><span class="font-medium">Cloudy</span> <span class="text-gray-600">Abri</span></div>
+                    <div class="word-item"><span class="font-medium">Foggy</span> <span class="text-gray-600">Dhundla</span></div>
+                    <div class="word-item"><span class="font-medium">Tree</span> <span class="text-gray-600">Darakht</span></div>
+                    <div class="word-item"><span class="font-medium">Flower</span> <span class="text-gray-600">Phool</span></div>
+                    <div class="word-item"><span class="font-medium">Grass</span> <span class="text-gray-600">Ghaas</span></div>
+                    <div class="word-item"><span class="font-medium">Leaf</span> <span class="text-gray-600">Patta</span></div>
+                    <div class="word-item"><span class="font-medium">Mountain</span> <span class="text-gray-600">Pahaar</span></div>
+                    <div class="word-item"><span class="font-medium">River</span> <span class="text-gray-600">Darya</span></div>
+                    <div class="word-item"><span class="font-medium">Lake</span> <span class="text-gray-600">Jheel</span></div>
+                    <div class="word-item"><span class="font-medium">Sea</span> <span class="text-gray-600">Samandar</span></div>
+                    <div class="word-item"><span class="font-medium">Beach</span> <span class="text-gray-600">Sahil</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. Colors and Shapes -->
+        <section id="colors-shapes" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Colors and Shapes</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Color</span> <span class="text-gray-600">Rang</span></div>
+                    <div class="word-item"><span class="font-medium">Red</span> <span class="text-gray-600">Laal</span></div>
+                    <div class="word-item"><span class="font-medium">Blue</span> <span class="text-gray-600">Neela</span></div>
+                    <div class="word-item"><span class="font-medium">Green</span> <span class="text-gray-600">Sabz / Hara</span></div>
+                    <div class="word-item"><span class="font-medium">Yellow</span> <span class="text-gray-600">Peela</span></div>
+                    <div class="word-item"><span class="font-medium">Orange</span> <span class="text-gray-600">Narangi</span></div>
+                    <div class="word-item"><span class="font-medium">Purple</span> <span class="text-gray-600">Jamuni</span></div>
+                    <div class="word-item"><span class="font-medium">Pink</span> <span class="text-gray-600">Gulabi</span></div>
+                    <div class="word-item"><span class="font-medium">Brown</span> <span class="text-gray-600">Bhura</span></div>
+                    <div class="word-item"><span class="font-medium">Black</span> <span class="text-gray-600">Kala</span></div>
+                    <div class="word-item"><span class="font-medium">White</span> <span class="text-gray-600">Safed</span></div>
+                    <div class="word-item"><span class="font-medium">Gray</span> <span class="text-gray-600">Khakistari</span></div>
+                    <div class="word-item"><span class="font-medium">Light</span> <span class="text-gray-600">Halka</span></div>
+                    <div class="word-item"><span class="font-medium">Dark</span> <span class="text-gray-600">Gehera</span></div>
+                    <div class="word-item"><span class="font-medium">Shape</span> <span class="text-gray-600">Shakal</span></div>
+                    <div class="word-item"><span class="font-medium">Circle</span> <span class="text-gray-600">Daira</span></div>
+                    <div class="word-item"><span class="font-medium">Square</span> <span class="text-gray-600">Murabba</span></div>
+                    <div class="word-item"><span class="font-medium">Rectangle</span> <span class="text-gray-600">Mustatel</span></div>
+                    <div class="word-item"><span class="font-medium">Triangle</span> <span class="text-gray-600">Tikoona</span></div>
+                    <div class="word-item"><span class="font-medium">Line</span> <span class="text-gray-600">Lakeer</span></div>
+                    <div class="word-item"><span class="font-medium">Point</span> <span class="text-gray-600">Nuqta</span></div>
+                    <div class="word-item"><span class="font-medium">Dot</span> <span class="text-gray-600">Nukta</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. Emotions and Feelings -->
+        <section id="emotions-feelings" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Emotions and Feelings</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Happy</span> <span class="text-gray-600">Khush</span></div>
+                    <div class="word-item"><span class="font-medium">Sad</span> <span class="text-gray-600">Udaas</span></div>
+                    <div class="word-item"><span class="font-medium">Angry</span> <span class="text-gray-600">Ghussa</span></div>
+                    <div class="word-item"><span class="font-medium">Scared</span> <span class="text-gray-600">Dara hua</span></div>
+                    <div class="word-item"><span class="font-medium">Excited</span> <span class="text-gray-600">Purjosh</span></div>
+                    <div class="word-item"><span class="font-medium">Tired</span> <span class="text-gray-600">Thaka hua</span></div>
+                    <div class="word-item"><span class="font-medium">Bored</span> <span class="text-gray-600">Bor</span></div>
+                    <div class="word-item"><span class="font-medium">Surprised</span> <span class="text-gray-600">Hairaan</span></div>
+                    <div class="word-item"><span class="font-medium">Confused</span> <span class="text-gray-600">Pareshan / Confuse</span></div>
+                    <div class="word-item"><span class="font-medium">Worried</span> <span class="text-gray-600">Fikarmand</span></div>
+                    <div class="word-item"><span class="font-medium">Confident</span> <span class="text-gray-600">Pur-etemad</span></div>
+                    <div class="word-item"><span class="font-medium">Shy</span> <span class="text-gray-600">Sharmila</span></div>
+                    <div class="word-item"><span class="font-medium">Jealous</span> <span class="text-gray-600">Hasid</span></div>
+                    <div class="word-item"><span class="font-medium">Proud</span> <span class="text-gray-600">Fakhar</span></div>
+                    <div class="word-item"><span class="font-medium">Guilty</span> <span class="text-gray-600">Mujrim / Sharaminda</span></div>
+                    <div class="word-item"><span class="font-medium">Disappointed</span> <span class="text-gray-600">Mayoos</span></div>
+                    <div class="word-item"><span class="font-medium">Satisfied</span> <span class="text-gray-600">Mutmain</span></div>
+                    <div class="word-item"><span class="font-medium">Grateful</span> <span class="text-gray-600">Shukrguzar</span></div>
+                    <div class="word-item"><span class="font-medium">Love</span> <span class="text-gray-600">Muhabbat</span></div>
+                    <div class="word-item"><span class="font-medium">Hate</span> <span class="text-gray-600">Nafrat</span></div>
+                    <div class="word-item"><span class="font-medium">Pain</span> <span class="text-gray-600">Dard</span></div>
+                    <div class="word-item"><span class="font-medium">Joy</span> <span class="text-gray-600">Khushi</span></div>
+                    <div class="word-item"><span class="font-medium">Fear</span> <span class="text-gray-600">Darr</span></div>
+                    <div class="word-item"><span class="font-medium">Hope</span> <span class="text-gray-600">Umeed</span></div>
+                    <div class="word-item"><span class="font-medium">Stress</span> <span class="text-gray-600">Tension</span></div>
+                    <div class="word-item"><span class="font-medium">Relaxed</span> <span class="text-gray-600">Pur-sukoon</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 14. Common Action Verbs -->
+        <section id="action-verbs" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Common Action Verbs</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Go</span> <span class="text-gray-600">Jana</span></div>
+                    <div class="word-item"><span class="font-medium">Come</span> <span class="text-gray-600">Aana</span></div>
+                    <div class="word-item"><span class="font-medium">Walk</span> <span class="text-gray-600">Chalna</span></div>
+                    <div class="word-item"><span class="font-medium">Run</span> <span class="text-gray-600">Bhagna / Daurna</span></div>
+                    <div class="word-item"><span class="font-medium">Jump</span> <span class="text-gray-600">Koodna</span></div>
+                    <div class="word-item"><span class="font-medium">Stand</span> <span class="text-gray-600">Khara hona</span></div>
+                    <div class="word-item"><span class="font-medium">Sit</span> <span class="text-gray-600">Baithna</span></div>
+                    <div class="word-item"><span class="font-medium">Sleep</span> <span class="text-gray-600">Sona</span></div>
+                    <div class="word-item"><span class="font-medium">Wake up</span> <span class="text-gray-600">Jagna / Uthna</span></div>
+                    <div class="word-item"><span class="font-medium">Eat</span> <span class="text-gray-600">Khana</span></div>
+                    <div class="word-item"><span class="font-medium">Drink</span> <span class="text-gray-600">Peena</span></div>
+                    <div class="word-item"><span class="font-medium">Cook</span> <span class="text-gray-600">Pakana</span></div>
+                    <div class="word-item"><span class="font-medium">Clean</span> <span class="text-gray-600">Saaf karna</span></div>
+                    <div class="word-item"><span class="font-medium">Wash</span> <span class="text-gray-600">Dhona</span></div>
+                    <div class="word-item"><span class="font-medium">Open</span> <span class="text-gray-600">Kholna</span></div>
+                    <div class="word-item"><span class="font-medium">Close</span> <span class="text-gray-600">Band karna</span></div>
+                    <div class="word-item"><span class="font-medium">Give</span> <span class="text-gray-600">Dena</span></div>
+                    <div class="word-item"><span class="font-medium">Take</span> <span class="text-gray-600">Lena</span></div>
+                    <div class="word-item"><span class="font-medium">Buy</span> <span class="text-gray-600">Khareedna</span></div>
+                    <div class="word-item"><span class="font-medium">Sell</span> <span class="text-gray-600">Bechna</span></div>
+                    <div class="word-item"><span class="font-medium">Pay</span> <span class="text-gray-600">Ada karna</span></div>
+                    <div class="word-item"><span class="font-medium">Make</span> <span class="text-gray-600">Banana</span></div>
+                    <div class="word-item"><span class="font-medium">Break</span> <span class="text-gray-600">Torna</span></div>
+                    <div class="word-item"><span class="font-medium">Fix</span> <span class="text-gray-600">Theek karna</span></div>
+                    <div class="word-item"><span class="font-medium">Build</span> <span class="text-gray-600">Banana / Tameer karna</span></div>
+                    <div class="word-item"><span class="font-medium">Work</span> <span class="text-gray-600">Kaam karna</span></div>
+                    <div class="word-item"><span class="font-medium">Play</span> <span class="text-gray-600">Khelna</span></div>
+                    <div class="word-item"><span class="font-medium">Study</span> <span class="text-gray-600">Parh'na</span></div>
+                    <div class="word-item"><span class="font-medium">Learn</span> <span class="text-gray-600">Seekhna</span></div>
+                    <div class="word-item"><span class="font-medium">Teach</span> <span class="text-gray-600">Sikhana / Parhana</span></div>
+                    <div class="word-item"><span class="font-medium">Help</span> <span class="text-gray-600">Madad karna</span></div>
+                    <div class="word-item"><span class="font-medium">Ask</span> <span class="text-gray-600">Poochna</span></div>
+                    <div class="word-item"><span class="font-medium">Answer</span> <span class="text-gray-600">Jawab dena</span></div>
+                    <div class="word-item"><span class="font-medium">Speak</span> <span class="text-gray-600">Bolna</span></div>
+                    <div class="word-item"><span class="font-medium">Listen</span> <span class="text-gray-600">Sunna</span></div>
+                    <div class="word-item"><span class="font-medium">Read</span> <span class="text-gray-600">Parhna</span></div>
+                    <div class="word-item"><span class="font-medium">Write</span> <span class="text-gray-600">Likhna</span></div>
+                    <div class="word-item"><span class="font-medium">Watch</span> <span class="text-gray-600">Dekhna</span></div>
+                    <div class="word-item"><span class="font-medium">Look</span> <span class="text-gray-600">Dekhna</span></div>
+                    <div class="word-item"><span class="font-medium">Find</span> <span class="text-gray-600">Dhundna</span></div>
+                    <div class="word-item"><span class="font-medium">Lose</span> <span class="text-gray-600">Khona</span></div>
+                    <div class="word-item"><span class="font-medium">Start</span> <span class="text-gray-600">Shuru karna</span></div>
+                    <div class="word-item"><span class="font-medium">Stop</span> <span class="text-gray-600">Rukna / Rokna</span></div>
+                    <div class="word-item"><span class="font-medium">Wait</span> <span class="text-gray-600">Intezar karna</span></div>
+                    <div class="word-item"><span class="font-medium">Finish</span> <span class="text-gray-600">Khatam karna</span></div>
+                    <div class="word-item"><span class="font-medium">Think</span> <span class="text-gray-600">Sochna</span></div>
+                    <div class="word-item"><span class="font-medium">Know</span> <span class="text-gray-600">Janna</span></div>
+                    <div class="word-item"><span class="font-medium">Understand</span> <span class="text-gray-600">Samajhna</span></div>
+                    <div class="word-item"><span class="font-medium">Remember</span> <span class="text-gray-600">Yaad rakhna</span></div>
+                    <div class="word-item"><span class="font-medium">Forget</span> <span class="text-gray-600">Bhoolna</span></div>
+                    <div class="word-item"><span class="font-medium">Meet</span> <span class="text-gray-600">Milna</span></div>
+                    <div class="word-item"><span class="font-medium">Call</span> <span class="text-gray-600">Phone karna / Bulana</span></div>
+                    <div class="word-item"><span class="font-medium">Send</span> <span class="text-gray-600">Bhejana</span></div>
+                    <div class="word-item"><span class="font-medium">Receive</span> <span class="text-gray-600">Wasool karna</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 15. Work and Professions -->
+        <section id="work-professions" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Work and Professions</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Work</span> <span class="text-gray-600">Kaam</span></div>
+                    <div class="word-item"><span class="font-medium">Job</span> <span class="text-gray-600">Naukri</span></div>
+                    <div class="word-item"><span class="font-medium">Career</span> <span class="text-gray-600">Pesha</span></div>
+                    <div class="word-item"><span class="font-medium">Profession</span> <span class="text-gray-600">Pesha</span></div>
+                    <div class="word-item"><span class="font-medium">Business</span> <span class="text-gray-600">Karobar</span></div>
+                    <div class="word-item"><span class="font-medium">Office</span> <span class="text-gray-600">Daftar</span></div>
+                    <div class="word-item"><span class="font-medium">Company</span> <span class="text-gray-600">Company</span></div>
+                    <div class="word-item"><span class="font-medium">Employee</span> <span class="text-gray-600">Mulazim</span></div>
+                    <div class="word-item"><span class="font-medium">Boss</span> <span class="text-gray-600">Malik / Boss</span></div>
+                    <div class="word-item"><span class="font-medium">Manager</span> <span class="text-gray-600">Manager</span></div>
+                    <div class="word-item"><span class="font-medium">Doctor</span> <span class="text-gray-600">Doctor</span></div>
+                    <div class="word-item"><span class="font-medium">Nurse</span> <span class="text-gray-600">Nurse</span></div>
+                    <div class="word-item"><span class="font-medium">Teacher</span> <span class="text-gray-600">Ustad / Teacher</span></div>
+                    <div class="word-item"><span class="font-medium">Student</span> <span class="text-gray-600">Talib-e-ilm / Student</span></div>
+                    <div class="word-item"><span class="font-medium">Engineer</span> <span class="text-gray-600">Engineer</span></div>
+                    <div class="word-item"><span class="font-medium">Lawyer</span> <span class="text-gray-600">Wakeel</span></div>
+                    <div class="word-item"><span class="font-medium">Police officer</span> <span class="text-gray-600">Police afsar</span></div>
+                    <div class="word-item"><span class="font-medium">Driver</span> <span class="text-gray-600">Driver</span></div>
+                    <div class="word-item"><span class="font-medium">Farmer</span> <span class="text-gray-600">Kisaan</span></div>
+                    <div class="word-item"><span class="font-medium">Shopkeeper</span> <span class="text-gray-600">Dukandaar</span></div>
+                    <div class="word-item"><span class="font-medium">Chef</span> <span class="text-gray-600">Chef / Bawarchi</span></div>
+                    <div class="word-item"><span class="font-medium">Waiter</span> <span class="text-gray-600">Waiter</span></div>
+                    <div class="word-item"><span class="font-medium">Actor</span> <span class="text-gray-600">Adakaar</span></div>
+                    <div class="word-item"><span class="font-medium">Artist</span> <span class="text-gray-600">Fankar</span></div>
+                    <div class="word-item"><span class="font-medium">Musician</span> <span class="text-gray-600">Mosiqaar</span></div>
+                    <div class="word-item"><span class="font-medium">Writer</span> <span class="text-gray-600">Musannif</span></div>
+                    <div class="word-item"><span class="font-medium">Journalist</span> <span class="text-gray-600">Sahafi</span></div>
+                    <div class="word-item"><span class="font-medium">Scientist</span> <span class="text-gray-600">Scientist / Sainsdan</span></div>
+                    <div class="word-item"><span class="font-medium">Programmer</span> <span class="text-gray-600">Programmer</span></div>
+                    <div class="word-item"><span class="font-medium">Designer</span> <span class="text-gray-600">Designer</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 16. Education and Learning -->
+        <section id="education" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Education and Learning</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Education</span> <span class="text-gray-600">Taleem</span></div>
+                    <div class="word-item"><span class="font-medium">School</span> <span class="text-gray-600">School</span></div>
+                    <div class="word-item"><span class="font-medium">College</span> <span class="text-gray-600">College</span></div>
+                    <div class="word-item"><span class="font-medium">University</span> <span class="text-gray-600">University</span></div>
+                    <div class="word-item"><span class="font-medium">Class</span> <span class="text-gray-600">Jamaat / Class</span></div>
+                    <div class="word-item"><span class="font-medium">Student</span> <span class="text-gray-600">Talib-e-ilm</span></div>
+                    <div class="word-item"><span class="font-medium">Teacher</span> <span class="text-gray-600">Ustad</span></div>
+                    <div class="word-item"><span class="font-medium">Professor</span> <span class="text-gray-600">Professor</span></div>
+                    <div class="word-item"><span class="font-medium">Principal</span> <span class="text-gray-600">Principal</span></div>
+                    <div class="word-item"><span class="font-medium">Subject</span> <span class="text-gray-600">Mazmoon</span></div>
+                    <div class="word-item"><span class="font-medium">Lesson</span> <span class="text-gray-600">Sabaq</span></div>
+                    <div class="word-item"><span class="font-medium">Book</span> <span class="text-gray-600">Kitaab</span></div>
+                    <div class="word-item"><span class="font-medium">Notebook</span> <span class="text-gray-600">Copy</span></div>
+                    <div class="word-item"><span class="font-medium">Pen</span> <span class="text-gray-600">Qalam</span></div>
+                    <div class="word-item"><span class="font-medium">Pencil</span> <span class="text-gray-600">Pencil</span></div>
+                    <div class="word-item"><span class="font-medium">Eraser</span> <span class="text-gray-600">Rubber</span></div>
+                    <div class="word-item"><span class="font-medium">Desk</span> <span class="text-gray-600">Desk</span></div>
+                    <div class="word-item"><span class="font-medium">Blackboard</span> <span class="text-gray-600">Takhti</span></div>
+                    <div class="word-item"><span class="font-medium">Homework</span> <span class="text-gray-600">Homework</span></div>
+                    <div class="word-item"><span class="font-medium">Test</span> <span class="text-gray-600">Test</span></div>
+                    <div class="word-item"><span class="font-medium">Exam</span> <span class="text-gray-600">Imtehan</span></div>
+                    <div class="word-item"><span class="font-medium">Pass</span> <span class="text-gray-600">Pass hona</span></div>
+                    <div class="word-item"><span class="font-medium">Fail</span> <span class="text-gray-600">Fail hona</span></div>
+                    <div class="word-item"><span class="font-medium">Degree</span> <span class="text-gray-600">Degree / Sanad</span></div>
+                    <div class="word-item"><span class="font-medium">Diploma</span> <span class="text-gray-600">Diploma</span></div>
+                    <div class="word-item"><span class="font-medium">Certificate</span> <span class="text-gray-600">Certificate</span></div>
+                    <div class="word-item"><span class="font-medium">Graduate</span> <span class="text-gray-600">Graduate</span></div>
+                    <div class="word-item"><span class="font-medium">Study</span> <span class="text-gray-600">Parhai karna</span></div>
+                    <div class="word-item"><span class="font-medium">Learn</span> <span class="text-gray-600">Seekhna</span></div>
+                    <div class="word-item"><span class="font-medium">Teach</span> <span class="text-gray-600">Parhana</span></div>
+                    <div class="word-item"><span class="font-medium">Practice</span> <span class="text-gray-600">Mashq karna</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 17. Health and Medicine -->
+        <section id="health-medicine" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Health and Medicine</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Health</span> <span class="text-gray-600">Sehat</span></div>
+                    <div class="word-item"><span class="font-medium">Sick</span> <span class="text-gray-600">Beemar</span></div>
+                    <div class="word-item"><span class="font-medium">Healthy</span> <span class="text-gray-600">Sehatmand</span></div>
+                    <div class="word-item"><span class="font-medium">Disease</span> <span class="text-gray-600">Bimari</span></div>
+                    <div class="word-item"><span class="font-medium">Pain</span> <span class="text-gray-600">Dard</span></div>
+                    <div class="word-item"><span class="font-medium">Fever</span> <span class="text-gray-600">Bukhar</span></div>
+                    <div class="word-item"><span class="font-medium">Cold</span> <span class="text-gray-600">Zukam</span></div>
+                    <div class="word-item"><span class="font-medium">Cough</span> <span class="text-gray-600">Khansi</span></div>
+                    <div class="word-item"><span class="font-medium">Headache</span> <span class="text-gray-600">Sar dard</span></div>
+                    <div class="word-item"><span class="font-medium">Stomachache</span> <span class="text-gray-600">Pet dard</span></div>
+                    <div class="word-item"><span class="font-medium">Toothache</span> <span class="text-gray-600">Dant dard</span></div>
+                    <div class="word-item"><span class="font-medium">Injury</span> <span class="text-gray-600">Chot</span></div>
+                    <div class="word-item"><span class="font-medium">Wound</span> <span class="text-gray-600">Zakham</span></div>
+                    <div class="word-item"><span class="font-medium">Medicine</span> <span class="text-gray-600">Dawa</span></div>
+                    <div class="word-item"><span class="font-medium">Pill</span> <span class="text-gray-600">Goli</span></div>
+                    <div class="word-item"><span class="font-medium">Injection</span> <span class="text-gray-600">Injection / Teeka</span></div>
+                    <div class="word-item"><span class="font-medium">Doctor</span> <span class="text-gray-600">Doctor</span></div>
+                    <div class="word-item"><span class="font-medium">Nurse</span> <span class="text-gray-600">Nurse</span></div>
+                    <div class="word-item"><span class="font-medium">Hospital</span> <span class="text-gray-600">Haspatal</span></div>
+                    <div class="word-item"><span class="font-medium">Clinic</span> <span class="text-gray-600">Clinic</span></div>
+                    <div class="word-item"><span class="font-medium">Pharmacy</span> <span class="text-gray-600">Dawa khana</span></div>
+                    <div class="word-item"><span class="font-medium">Ambulance</span> <span class="text-gray-600">Ambulance</span></div>
+                    <div class="word-item"><span class="font-medium">Emergency</span> <span class="text-gray-600">Emergency</span></div>
+                    <div class="word-item"><span class="font-medium">Operation</span> <span class="text-gray-600">Operation</span></div>
+                    <div class="word-item"><span class="font-medium">Surgery</span> <span class="text-gray-600">Surgery</span></div>
+                    <div class="word-item"><span class="font-medium">Blood test</span> <span class="text-gray-600">Khoon ka test</span></div>
+                    <div class="word-item"><span class="font-medium">X-ray</span> <span class="text-gray-600">X-ray</span></div>
+                    <div class="word-item"><span class="font-medium">Allergy</span> <span class="text-gray-600">Allergy</span></div>
+                    <div class="word-item"><span class="font-medium">Virus</span> <span class="text-gray-600">Virus</span></div>
+                    <div class="word-item"><span class="font-medium">Exercise</span> <span class="text-gray-600">Warzish</span></div>
+                    <div class="word-item"><span class="font-medium">Diet</span> <span class="text-gray-600">Parhez / Diet</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 18. Technology and Internet -->
+        <section id="technology" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Technology and Internet</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Technology</span> <span class="text-gray-600">Technology</span></div>
+                    <div class="word-item"><span class="font-medium">Computer</span> <span class="text-gray-600">Computer</span></div>
+                    <div class="word-item"><span class="font-medium">Laptop</span> <span class="text-gray-600">Laptop</span></div>
+                    <div class="word-item"><span class="font-medium">Phone</span> <span class="text-gray-600">Phone / Mobile</span></div>
+                    <div class="word-item"><span class="font-medium">Smartphone</span> <span class="text-gray-600">Smartphone</span></div>
+                    <div class="word-item"><span class="font-medium">Tablet</span> <span class="text-gray-600">Tablet</span></div>
+                    <div class="word-item"><span class="font-medium">Internet</span> <span class="text-gray-600">Internet</span></div>
+                    <div class="word-item"><span class="font-medium">Website</span> <span class="text-gray-600">Website</span></div>
+                    <div class="word-item"><span class="font-medium">Email</span> <span class="text-gray-600">Email</span></div>
+                    <div class="word-item"><span class="font-medium">Password</span> <span class="text-gray-600">Password</span></div>
+                    <div class="word-item"><span class="font-medium">WiFi</span> <span class="text-gray-600">WiFi</span></div>
+                    <div class="word-item"><span class="font-medium">Network</span> <span class="text-gray-600">Network</span></div>
+                    <div class="word-item"><span class="font-medium">Software</span> <span class="text-gray-600">Software</span></div>
+                    <div class="word-item"><span class="font-medium">App</span> <span class="text-gray-600">App</span></div>
+                    <div class="word-item"><span class="font-medium">Download</span> <span class="text-gray-600">Download</span></div>
+                    <div class="word-item"><span class="font-medium">Upload</span> <span class="text-gray-600">Upload</span></div>
+                    <div class="word-item"><span class="font-medium">Click</span> <span class="text-gray-600">Click</span></div>
+                    <div class="word-item"><span class="font-medium">Screen</span> <span class="text-gray-600">Screen</span></div>
+                    <div class="word-item"><span class="font-medium">Keyboard</span> <span class="text-gray-600">Keyboard</span></div>
+                    <div class="word-item"><span class="font-medium">Mouse</span> <span class="text-gray-600">Mouse</span></div>
+                    <div class="word-item"><span class="font-medium">Printer</span> <span class="text-gray-600">Printer</span></div>
+                    <div class="word-item"><span class="font-medium">Camera</span> <span class="text-gray-600">Camera</span></div>
+                    <div class="word-item"><span class="font-medium">Photo</span> <span class="text-gray-600">Photo / Tasveer</span></div>
+                    <div class="word-item"><span class="font-medium">Video</span> <span class="text-gray-600">Video</span></div>
+                    <div class="word-item"><span class="font-medium">File</span> <span class="text-gray-600">File</span></div>
+                    <div class="word-item"><span class="font-medium">Folder</span> <span class="text-gray-600">Folder</span></div>
+                    <div class="word-item"><span class="font-medium">Message</span> <span class="text-gray-600">Message / Paigham</span></div>
+                    <div class="word-item"><span class="font-medium">Chat</span> <span class="text-gray-600">Chat / Guftugu</span></div>
+                    <div class="word-item"><span class="font-medium">Social media</span> <span class="text-gray-600">Social media</span></div>
+                    <div class="word-item"><span class="font-medium">Search</span> <span class="text-gray-600">Search / Talash</span></div>
+                    <div class="word-item"><span class="font-medium">Online</span> <span class="text-gray-600">Online</span></div>
+                    <div class="word-item"><span class="font-medium">Offline</span> <span class="text-gray-600">Offline</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 19. Shopping and Money -->
+        <section id="shopping-money" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Shopping and Money</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Shopping</span> <span class="text-gray-600">Shopping / Kharidari</span></div>
+                    <div class="word-item"><span class="font-medium">Shop</span> <span class="text-gray-600">Dukaan</span></div>
+                    <div class="word-item"><span class="font-medium">Store</span> <span class="text-gray-600">Store</span></div>
+                    <div class="word-item"><span class="font-medium">Supermarket</span> <span class="text-gray-600">Supermarket</span></div>
+                    <div class="word-item"><span class="font-medium">Mall</span> <span class="text-gray-600">Mall</span></div>
+                    <div class="word-item"><span class="font-medium">Market</span> <span class="text-gray-600">Bazaar</span></div>
+                    <div class="word-item"><span class="font-medium">Customer</span> <span class="text-gray-600">Gahak</span></div>
+                    <div class="word-item"><span class="font-medium">Shopkeeper</span> <span class="text-gray-600">Dukandaar</span></div>
+                    <div class="word-item"><span class="font-medium">Buy</span> <span class="text-gray-600">Khareedna</span></div>
+                    <div class="word-item"><span class="font-medium">Sell</span> <span class="text-gray-600">Bechna</span></div>
+                    <div class="word-item"><span class="font-medium">Price</span> <span class="text-gray-600">Qeemat / Rate</span></div>
+                    <div class="word-item"><span class="font-medium">Cheap</span> <span class="text-gray-600">Sasta</span></div>
+                    <div class="word-item"><span class="font-medium">Expensive</span> <span class="text-gray-600">Mehnga</span></div>
+                    <div class="word-item"><span class="font-medium">Money</span> <span class="text-gray-600">Paisa</span></div>
+                    <div class="word-item"><span class="font-medium">Cash</span> <span class="text-gray-600">Cash / Naqd</span></div>
+                    <div class="word-item"><span class="font-medium">Card</span> <span class="text-gray-600">Card</span></div>
+                    <div class="word-item"><span class="font-medium">Credit card</span> <span class="text-gray-600">Credit card</span></div>
+                    <div class="word-item"><span class="font-medium">Bank</span> <span class="text-gray-600">Bank</span></div>
+                    <div class="word-item"><span class="font-medium">ATM</span> <span class="text-gray-600">ATM</span></div>
+                    <div class="word-item"><span class="font-medium">Pay</span> <span class="text-gray-600">Ada karna</span></div>
+                    <div class="word-item"><span class="font-medium">Bill</span> <span class="text-gray-600">Bill</span></div>
+                    <div class="word-item"><span class="font-medium">Receipt</span> <span class="text-gray-600">Receipt / Raseed</span></div>
+                    <div class="word-item"><span class="font-medium">Discount</span> <span class="text-gray-600">Discount / Chhoot</span></div>
+                    <div class="word-item"><span class="font-medium">Sale</span> <span class="text-gray-600">Sale</span></div>
+                    <div class="word-item"><span class="font-medium">Offer</span> <span class="text-gray-600">Offer</span></div>
+                    <div class="word-item"><span class="font-medium">Bargain</span> <span class="text-gray-600">Mol-tol</span></div>
+                    <div class="word-item"><span class="font-medium">Wallet</span> <span class="text-gray-600">Wallet / Batwa</span></div>
+                    <div class="word-item"><span class="font-medium">Coin</span> <span class="text-gray-600">Sikka</span></div>
+                    <div class="word-item"><span class="font-medium">Note</span> <span class="text-gray-600">Note</span></div>
+                    <div class="word-item"><span class="font-medium">Change</span> <span class="text-gray-600">Khurda</span></div>
+                    <div class="word-item"><span class="font-medium">Cost</span> <span class="text-gray-600">Lagat</span></div>
+                    <div class="word-item"><span class="font-medium">Budget</span> <span class="text-gray-600">Budget</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 20. Common Adjectives -->
+        <section id="adjectives" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Common Adjectives</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Good</span> <span class="text-gray-600">Acha</span></div>
+                    <div class="word-item"><span class="font-medium">Bad</span> <span class="text-gray-600">Bura</span></div>
+                    <div class="word-item"><span class="font-medium">Big</span> <span class="text-gray-600">Bara</span></div>
+                    <div class="word-item"><span class="font-medium">Small</span> <span class="text-gray-600">Chota</span></div>
+                    <div class="word-item"><span class="font-medium">Long</span> <span class="text-gray-600">Lamba</span></div>
+                    <div class="word-item"><span class="font-medium">Short</span> <span class="text-gray-600">Chota</span></div>
+                    <div class="word-item"><span class="font-medium">High</span> <span class="text-gray-600">Uncha</span></div>
+                    <div class="word-item"><span class="font-medium">Low</span> <span class="text-gray-600">Neecha</span></div>
+                    <div class="word-item"><span class="font-medium">Fast</span> <span class="text-gray-600">Tez</span></div>
+                    <div class="word-item"><span class="font-medium">Slow</span> <span class="text-gray-600">Ahista</span></div>
+                    <div class="word-item"><span class="font-medium">Hot</span> <span class="text-gray-600">Garam</span></div>
+                    <div class="word-item"><span class="font-medium">Cold</span> <span class="text-gray-600">Thanda</span></div>
+                    <div class="word-item"><span class="font-medium">New</span> <span class="text-gray-600">Naya</span></div>
+                    <div class="word-item"><span class="font-medium">Old</span> <span class="text-gray-600">Purana</span></div>
+                    <div class="word-item"><span class="font-medium">Young</span> <span class="text-gray-600">Jawan</span></div>
+                    <div class="word-item"><span class="font-medium">Beautiful</span> <span class="text-gray-600">Khoobsurat</span></div>
+                    <div class="word-item"><span class="font-medium">Ugly</span> <span class="text-gray-600">Bad-surat</span></div>
+                    <div class="word-item"><span class="font-medium">Rich</span> <span class="text-gray-600">Ameer</span></div>
+                    <div class="word-item"><span class="font-medium">Poor</span> <span class="text-gray-600">Ghareeb</span></div>
+                    <div class="word-item"><span class="font-medium">Strong</span> <span class="text-gray-600">Mazboot</span></div>
+                    <div class="word-item"><span class="font-medium">Weak</span> <span class="text-gray-600">Kamzor</span></div>
+                    <div class="word-item"><span class="font-medium">Heavy</span> <span class="text-gray-600">Bhari</span></div>
+                    <div class="word-item"><span class="font-medium">Light</span> <span class="text-gray-600">Halka</span></div>
+                    <div class="word-item"><span class="font-medium">Easy</span> <span class="text-gray-600">Aasan</span></div>
+                    <div class="word-item"><span class="font-medium">Difficult</span> <span class="text-gray-600">Mushkil</span></div>
+                    <div class="word-item"><span class="font-medium">Clean</span> <span class="text-gray-600">Saaf</span></div>
+                    <div class="word-item"><span class="font-medium">Dirty</span> <span class="text-gray-600">Ganda</span></div>
+                    <div class="word-item"><span class="font-medium">Empty</span> <span class="text-gray-600">Khali</span></div>
+                    <div class="word-item"><span class="font-medium">Full</span> <span class="text-gray-600">Bhara hua</span></div>
+                    <div class="word-item"><span class="font-medium">Open</span> <span class="text-gray-600">Khula</span></div>
+                    <div class="word-item"><span class="font-medium">Closed</span> <span class="text-gray-600">Band</span></div>
+                    <div class="word-item"><span class="font-medium">Happy</span> <span class="text-gray-600">Khush</span></div>
+                    <div class="word-item"><span class="font-medium">Sad</span> <span class="text-gray-600">Udaas</span></div>
+                    <div class="word-item"><span class="font-medium">Angry</span> <span class="text-gray-600">Gussa</span></div>
+                    <div class="word-item"><span class="font-medium">Smart</span> <span class="text-gray-600">Hoshyar</span></div>
+                    <div class="word-item"><span class="font-medium">Stupid</span> <span class="text-gray-600">Bewaqoof</span></div>
+                    <div class="word-item"><span class="font-medium">Interesting</span> <span class="text-gray-600">Dilchasp</span></div>
+                    <div class="word-item"><span class="font-medium">Boring</span> <span class="text-gray-600">Booriyet bhara</span></div>
+                    <div class="word-item"><span class="font-medium">Important</span> <span class="text-gray-600">Aham</span></div>
+                    <div class="word-item"><span class="font-medium">Right</span> <span class="text-gray-600">Sahi / Theek</span></div>
+                    <div class="word-item"><span class="font-medium">Wrong</span> <span class="text-gray-600">Galat</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 21. Prepositions and Conjunctions -->
+        <section id="prepositions" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Prepositions and Conjunctions</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">In</span> <span class="text-gray-600">Mein / Andar</span></div>
+                    <div class="word-item"><span class="font-medium">On</span> <span class="text-gray-600">Par / Upar</span></div>
+                    <div class="word-item"><span class="font-medium">At</span> <span class="text-gray-600">Par</span></div>
+                    <div class="word-item"><span class="font-medium">To</span> <span class="text-gray-600">Ko</span></div>
+                    <div class="word-item"><span class="font-medium">From</span> <span class="text-gray-600">Se</span></div>
+                    <div class="word-item"><span class="font-medium">With</span> <span class="text-gray-600">Ke saath</span></div>
+                    <div class="word-item"><span class="font-medium">Without</span> <span class="text-gray-600">Ke baghair</span></div>
+                    <div class="word-item"><span class="font-medium">For</span> <span class="text-gray-600">Ke liye</span></div>
+                    <div class="word-item"><span class="font-medium">Of</span> <span class="text-gray-600">Ka</span></div>
+                    <div class="word-item"><span class="font-medium">By</span> <span class="text-gray-600">Ke zariye</span></div>
+                    <div class="word-item"><span class="font-medium">About</span> <span class="text-gray-600">Ke baare mein</span></div>
+                    <div class="word-item"><span class="font-medium">Between</span> <span class="text-gray-600">Ke darmiyaan</span></div>
+                    <div class="word-item"><span class="font-medium">Among</span> <span class="text-gray-600">Ke darmiyan</span></div>
+                    <div class="word-item"><span class="font-medium">Before</span> <span class="text-gray-600">Pehle</span></div>
+                    <div class="word-item"><span class="font-medium">After</span> <span class="text-gray-600">Baad</span></div>
+                    <div class="word-item"><span class="font-medium">During</span> <span class="text-gray-600">Ke dauraan</span></div>
+                    <div class="word-item"><span class="font-medium">Until</span> <span class="text-gray-600">Tab tak</span></div>
+                    <div class="word-item"><span class="font-medium">Since</span> <span class="text-gray-600">Se / Jab se</span></div>
+                    <div class="word-item"><span class="font-medium">Under</span> <span class="text-gray-600">Ke neeche</span></div>
+                    <div class="word-item"><span class="font-medium">Over</span> <span class="text-gray-600">Ke upar</span></div>
+                    <div class="word-item"><span class="font-medium">Above</span> <span class="text-gray-600">Ke upar</span></div>
+                    <div class="word-item"><span class="font-medium">Below</span> <span class="text-gray-600">Ke neeche</span></div>
+                    <div class="word-item"><span class="font-medium">Near</span> <span class="text-gray-600">Ke paas</span></div>
+                    <div class="word-item"><span class="font-medium">Far</span> <span class="text-gray-600">Door</span></div>
+                    <div class="word-item"><span class="font-medium">Through</span> <span class="text-gray-600">Ke zariye</span></div>
+                    <div class="word-item"><span class="font-medium">And</span> <span class="text-gray-600">Aur</span></div>
+                    <div class="word-item"><span class="font-medium">Or</span> <span class="text-gray-600">Ya</span></div>
+                    <div class="word-item"><span class="font-medium">But</span> <span class="text-gray-600">Lekin / Magar</span></div>
+                    <div class="word-item"><span class="font-medium">So</span> <span class="text-gray-600">To / Isliye</span></div>
+                    <div class="word-item"><span class="font-medium">Because</span> <span class="text-gray-600">Kyunke</span></div>
+                    <div class="word-item"><span class="font-medium">If</span> <span class="text-gray-600">Agar</span></div>
+                    <div class="word-item"><span class="font-medium">When</span> <span class="text-gray-600">Jab</span></div>
+                    <div class="word-item"><span class="font-medium">While</span> <span class="text-gray-600">Jabke</span></div>
+                    <div class="word-item"><span class="font-medium">Though</span> <span class="text-gray-600">Agarche</span></div>
+                    <div class="word-item"><span class="font-medium">Although</span> <span class="text-gray-600">Halanke</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 22. Question Words and Phrases -->
+        <section id="question-words" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Question Words and Phrases</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">What</span> <span class="text-gray-600">Kya</span></div>
+                    <div class="word-item"><span class="font-medium">Where</span> <span class="text-gray-600">Kahan</span></div>
+                    <div class="word-item"><span class="font-medium">When</span> <span class="text-gray-600">Kab</span></div>
+                    <div class="word-item"><span class="font-medium">Why</span> <span class="text-gray-600">Kyun</span></div>
+                    <div class="word-item"><span class="font-medium">How</span> <span class="text-gray-600">Kaise</span></div>
+                    <div class="word-item"><span class="font-medium">Who</span> <span class="text-gray-600">Kaun</span></div>
+                    <div class="word-item"><span class="font-medium">Whom</span> <span class="text-gray-600">Kis ko</span></div>
+                    <div class="word-item"><span class="font-medium">Whose</span> <span class="text-gray-600">Kis ka</span></div>
+                    <div class="word-item"><span class="font-medium">Which</span> <span class="text-gray-600">Kaun sa</span></div>
+                    <div class="word-item"><span class="font-medium">How many</span> <span class="text-gray-600">Kitne</span></div>
+                    <div class="word-item"><span class="font-medium">How much</span> <span class="text-gray-600">Kitna</span></div>
+                    <div class="word-item"><span class="font-medium">How long</span> <span class="text-gray-600">Kitni der</span></div>
+                    <div class="word-item"><span class="font-medium">How far</span> <span class="text-gray-600">Kitni door</span></div>
+                    <div class="word-item"><span class="font-medium">How often</span> <span class="text-gray-600">Kitni baar</span></div>
+                    <div class="word-item"><span class="font-medium">How old</span> <span class="text-gray-600">Kitni umar</span></div>
+                    <div class="word-item"><span class="font-medium">What time</span> <span class="text-gray-600">Kis waqt</span></div>
+                    <div class="word-item"><span class="font-medium">What kind</span> <span class="text-gray-600">Kis qisam ka</span></div>
+                    <div class="word-item"><span class="font-medium">What color</span> <span class="text-gray-600">Kis rang ka</span></div>
+                    <div class="word-item"><span class="font-medium">What size</span> <span class="text-gray-600">Kis size ka</span></div>
+                    <div class="word-item"><span class="font-medium">Can you</span> <span class="text-gray-600">Kya aap</span></div>
+                    <div class="word-item"><span class="font-medium">Do you</span> <span class="text-gray-600">Kya aap</span></div>
+                    <div class="word-item"><span class="font-medium">Are you</span> <span class="text-gray-600">Kya aap</span></div>
+                    <div class="word-item"><span class="font-medium">Will you</span> <span class="text-gray-600">Kya aap</span></div>
+                    <div class="word-item"><span class="font-medium">Would you</span> <span class="text-gray-600">Kya aap</span></div>
+                    <div class="word-item"><span class="font-medium">Could you</span> <span class="text-gray-600">Kya aap</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 23. Common Expressions and Idioms -->
+        <section id="expressions" class="category-section">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 category-title">Common Expressions and Idioms</h2>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="word-container">
+                    <div class="word-item"><span class="font-medium">Nice to meet you</span> <span class="text-gray-600">Aap se mil kar khushi hui</span></div>
+                    <div class="word-item"><span class="font-medium">How are you?</span> <span class="text-gray-600">Aap kaise hain?</span></div>
+                    <div class="word-item"><span class="font-medium">I'm fine</span> <span class="text-gray-600">Main theek hoon</span></div>
+                    <div class="word-item"><span class="font-medium">Thank you</span> <span class="text-gray-600">Shukriya</span></div>
+                    <div class="word-item"><span class="font-medium">You're welcome</span> <span class="text-gray-600">Koi baat nahi</span></div>
+                    <div class="word-item"><span class="font-medium">Excuse me</span> <span class="text-gray-600">Maaf kijiye</span></div>
+                    <div class="word-item"><span class="font-medium">I'm sorry</span> <span class="text-gray-600">Mujhe maaf kijiye</span></div>
+                    <div class="word-item"><span class="font-medium">No problem</span> <span class="text-gray-600">Koi masla nahi</span></div>
+                    <div class="word-item"><span class="font-medium">Good luck</span> <span class="text-gray-600">Khush qismati</span></div>
+                    <div class="word-item"><span class="font-medium">Congratulations</span> <span class="text-gray-600">Mubarakbaad</span></div>
+                    <div class="word-item"><span class="font-medium">Get well soon</span> <span class="text-gray-600">Jald sehatyaab hon</span></div>
+                    <div class="word-item"><span class="font-medium">Happy birthday</span> <span class="text-gray-600">Saalgira mubarak</span></div>
+                    <div class="word-item"><span class="font-medium">Take care</span> <span class="text-gray-600">Apna khayal rakhna</span></div>
+                    <div class="word-item"><span class="font-medium">Have a nice day</span> <span class="text-gray-600">Acha din guzarain</span></div>
+                    <div class="word-item"><span class="font-medium">I love you</span> <span class="text-gray-600">Main aap se muhabbat karta/karti hoon</span></div>
+                    <div class="word-item"><span class="font-medium">I miss you</span> <span class="text-gray-600">Mujhe aap ki yaad aati hai</span></div>
+                    <div class="word-item"><span class="font-medium">I don't know</span> <span class="text-gray-600">Mujhe nahi pata</span></div>
+                    <div class="word-item"><span class="font-medium">I understand</span> <span class="text-gray-600">Main samajh gaya/gayi</span></div>
+                    <div class="word-item"><span class="font-medium">It doesn't matter</span> <span class="text-gray-600">Koi baat nahi</span></div>
+                    <div class="word-item"><span class="font-medium">Just a minute</span> <span class="text-gray-600">Bas ek minute</span></div>
+                    <div class="word-item"><span class="font-medium">Come in</span> <span class="text-gray-600">Andar aayein</span></div>
+                    <div class="word-item"><span class="font-medium">Help yourself</span> <span class="text-gray-600">Khud le lein</span></div>
+                    <div class="word-item"><span class="font-medium">Take your time</span> <span class="text-gray-600">Apna waqt lein</span></div>
+                    <div class="word-item"><span class="font-medium">Just kidding</span> <span class="text-gray-600">Bus mazaq kar raha tha</span></div>
+                    <div class="word-item"><span class="font-medium">Good idea</span> <span class="text-gray-600">Acha khayal hai</span></div>
+                    <div class="word-item"><span class="font-medium">Let me think</span> <span class="text-gray-600">Mujhe sochne dein</span></div>
+                    <div class="word-item"><span class="font-medium">I agree</span> <span class="text-gray-600">Main raazi hoon</span></div>
+                    <div class="word-item"><span class="font-medium">I disagree</span> <span class="text-gray-600">Main raazi nahi hoon</span></div>
+                    <div class="word-item"><span class="font-medium">It's up to you</span> <span class="text-gray-600">Yeh aap par hai</span></div>
+                    <div class="word-item"><span class="font-medium">I can't believe it</span> <span class="text-gray-600">Mujhe yakin nahi aata</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-16 py-8 border-t border-gray-300 text-center text-gray-600">
+        <p>© 2025 Complete English Words with Roman Urdu Meanings By Ali Haider ❤️</p>
+        <p class="mt-2">Use this guide to improve your English vocabulary and comprehension.</p>
+    </footer>
+
+    <script>
+        // Generate category jump links
+        const categoryJumpDiv = document.getElementById('categoryJump');
+        const categories = document.querySelectorAll('.category-section');
+        
+        categories.forEach(category => {
+            const id = category.id;
+            const title = category.querySelector('h2').textContent;
+            const link = document.createElement('a');
+            link.href = `#${id}`;
+            link.className = 'px-3 py-1 bg-gray-200
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDj0rqKIBLItgl4ZPzIZj%2FVu6MnhPgOe1A3Elod%2BztW7eRSxGdFz1Xuw4aFrGXKWYUamMly6jq4224nvn00JS7dTYv004zdpbLemk7W%2FKXY%2BJqBBwSMErdbcyKZ3NGLt6tumbFUfDmqGAFpoKf%2F%2BOoO4arSr7JRT7rU6tULE5f0cPub%2FqyJc47PmM2jlwW5Ync3G1Cfk9tlWLoGAFhq%2BXsq3ySPcr8UxCy9O7UvGJ%2FZaMvTaiXUmUBx%2BX3ml%2FSSW9vkNR6XYsXNZaqqwVQ90%2FX2zSwqrgd524CEu18ncTy4t5WV5nY%2BB8733y8C9nOhHSzOLxC%2FCWxEUJh3h7OACb3Xw5bAHVPIov3%2FwyepV2%2FS9rnmlaa1sbe%2FgMD21ZgbaatN4o1%2Fq4F%2F4A7TnOq14PrennXDRaJoJWpHeEh5lfwDHwWgwg0uIj7DYPbeUV4iKHyuJ%2FZYRN7WT2k8M%2BdXdscP1aeb5R6EJoxWbi2q9G8i65n4UtbjkmwUVIYaZxobTE0KO1P30lNx4s6iQT8IC54ww%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDj0rqKIBLItgl4ZPzIZj/Vu6MnhPgOe1A3Elod+ztW7eRSxGdFz1Xuw4aFrGXKWYUamMly6jq4224nvn00JS7dTYv004zdpbLemk7W/KXY+JqBBwSMErdbcyKZ3NGLt6tumbFUfDmqGAFpoKf/+OoO4arSr7JRT7rU6tULE5f0cPub/qyJc47PmM2jlwW5Ync3G1Cfk9tlWLoGAFhq+Xsq3ySPcr8UxCy9O7UvGJ/ZaMvTaiXUmUBx+X3ml/SSW9vkNR6XYsXNZaqqwVQ90/X2zSwqrgd524CEu18ncTy4t5WV5nY+B8733y8C9nOhHSzOLxC/CWxEUJh3h7OACb3Xw5bAHVPIov3/wyepV2/S9rnmlaa1sbe/gMD21ZgbaatN4o1/q4F/4A7TnOq14PrennXDRaJoJWpHeEh5lfwDHwWgwg0uIj7DYPbeUV4iKHyuJ/ZYRN7WT2k8M+dXdscP1aeb5R6EJoxWbi2q9G8i65n4UtbjkmwUVIYaZxobTE0KO1P30lNx4s6iQT8IC54ww=";
+    </script>
+    
